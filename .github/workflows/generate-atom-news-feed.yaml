@@ -4,9 +4,9 @@ on:
   repository_dispatch:
     types:
       - resource-published
-  schedule:
+  #schedule:
     # Runs daily in case any event was missed
-    - cron: '30 0 * * *'
+   # - cron: '30 0 * * *'
   pull_request:
     paths:
       - '.github/ci/**'
